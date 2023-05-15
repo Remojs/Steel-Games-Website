@@ -1,0 +1,16 @@
+body{
+    background-color: #017b23;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 200px;
+    height: 100px;
+    color: azure;
+    background-color: rgb(29, 38, 68);
+}

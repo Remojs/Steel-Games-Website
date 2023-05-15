@@ -1,42 +1,25 @@
-const axios = require("axios");
 const { Videogames, Genres } = require("../db");
-const URL = 'https://api.rawg.io/api/games?key=7283520e86154edd8646ecf1e9e8f823'
+const URL = 'https://api.rawg.io/api/games?key=7283520e86154edd8646ecf1e9e8f823&page_size=20'
+const getGameInfo = require('./tools.controller')
 
 const getApiGames = async (url) => {
-    let allGamesApi = [];
-    let next = url;
+    let allGames = [];
+    let nextPage = url;
 
-    while (next && allGamesApi.length < 100) {
-    const { data } = await axios.get(next);
-    const games = data.results.map(({ id, name, background_image, released, rating, platforms, genres }) => ({
-        id,
-        name,
-        image: background_image,
-        released,
-        rating,
-        platform: platforms.map((el) => el.platform.name),
-        genres: genres.map((el) => el.name),
-    }));
-
-    allGamesApi = [...allGamesApi, ...games];
-    next = data.next;
+    while (nextPage && allGames.length < 100) {
+        let { game, next } = await getGameInfo(nextPage, 'many') //la 'many' es para indicarle q me devuelva el next
+        allGames = [...allGames, ...game];
+        nextPage = next;
     }
-
-    return allGamesApi;
+        return allGames;
 };
 
-
-
-const getDbGames = async () => {
-    const videogames = await Videogames.findAll()
-    return videogames;
-};
+const getDbGames = async (db) => await db.findAll()
 
 const getAll = async () => {
-    const db = await getDbGames();
+    const db = await getDbGames(Videogames);
     const api = await getApiGames(URL);
-    const [dbData, apiData] = await Promise.all([api, db]);
-    return [...dbData, ...apiData];
+    return [...db, ...api];
 };
 
 module.exports = getAll
