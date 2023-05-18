@@ -29,7 +29,7 @@ export const setGenres = (genre) => {
 export const getAllGames = () => {
     return async (dispatch) => {
         try {
-            const { data } = await axios.get('http://localhost:3001/videogames');
+            const { data } = await axios.get(`http://localhost:3001/videogames`);
             dispatch(setVideogames(data));
         } catch (error) {
             console.log(error);
@@ -46,4 +46,17 @@ export const getAllGenres = () => {
             console.log(error);
         }
     }
+}
+
+export function PostVideogames(payload){
+    return async function(dispatch){
+        try{
+            const data = await axios.post("http://localhost:3001/videogames/", payload)
+            alert('Formulario enviado')
+            return data;
+        } catch(error){
+            alert('Server caido')
+        }
+    }
+
 }

@@ -6,6 +6,9 @@ import './home.css'
 
 const Home = () => {
     const [searchValue, SetSearchValue] = useState('')
+    const [currentPage, setCurrentPage] = useState(1);
+    const [gamesPerPage] = useState(15);
+
     const videogames = useSelector(state => state.videogames)
     const genreList = useSelector(state => state.genres)
     const dispatch = useDispatch();;
@@ -37,6 +40,19 @@ const Home = () => {
         dispatch(getAllGenres());
     }, []);
 
+    const indexOfLastGame = currentPage * gamesPerPage;
+    const indexOfFirstGame = indexOfLastGame - gamesPerPage;
+    const currentGames = gameSearch.slice(indexOfFirstGame, indexOfLastGame);
+
+    const totalPages = Math.ceil(gameSearch.length / gamesPerPage);
+
+    const goToNextPage = () => {
+    setCurrentPage(prevPage => prevPage + 1);
+    };
+
+    const goToPreviousPage = () => {
+    setCurrentPage(prevPage => prevPage - 1);
+    };
 
 return (
     <div>
@@ -73,7 +89,8 @@ return (
             </div>
 
     <div className="box-game">
-        {gameSearch.map(game => (
+        {console.log(gameSearch)}
+        {currentGames.map(game => (
         <div key={game.id}>
             <NavLink to={`/detail/${game.id}`}><h1>{game.name}</h1></NavLink>
             <ul>{game.genres?.map(gen => <li key={gen}>{gen}</li>)}</ul>
@@ -81,6 +98,13 @@ return (
         </div>
         ))}
     </div>
+
+    <div className="pagination">
+        <button onClick={goToPreviousPage} disabled={currentPage === 1}> Anterior </button>
+            <span>{currentPage}</span>
+        <button onClick={goToNextPage} disabled={currentPage === totalPages}>Siguiente </button>
+</div>
+
     </div>
 );
 };
