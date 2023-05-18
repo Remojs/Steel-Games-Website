@@ -15,10 +15,10 @@ const getDbGamebyId = async (idVideogame) => {
 
 const getAllbyId = async (idVideogame) => {
         if(isNaN(idVideogame)){
-            const db = await getGameInfo(`${API_URL}/${+idVideogame}${API_KEY}`, 'few');
+            const db = await getDbGamebyId(idVideogame);
             return db
         } else {
-            const api = await getApiGamebyId(idVideogame);
+            const api = await getGameInfo(`${API_URL}/${+idVideogame}${API_KEY}`, 'few');
             return api;
         }
 }

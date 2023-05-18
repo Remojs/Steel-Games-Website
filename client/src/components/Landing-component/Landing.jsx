@@ -1,11 +1,11 @@
 import React from 'react'
-import { Navlink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './landing.css'
 
 const Landing = () => {
   return (
     <div className='btn-box'>
-      <button className='btn'> <Navlink to='/home'> Go to Store </Navlink> </button>
+      <button className='btn'> <NavLink to='/home'> GO HOME </NavLink> </button>
     </div>
   )
 }
