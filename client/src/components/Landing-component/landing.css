@@ -1,5 +1,8 @@
 body{
-    background-color: #017b23;
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LandingBG.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .btn-box{
