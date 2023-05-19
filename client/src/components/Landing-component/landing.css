@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+::-webkit-scrollbar {display: none;}
+
+
 
 body{
-    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LandingBG.png?raw=true');
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LandingBGN.png?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12,7 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 275px;
 }
 
 .btn-link{
@@ -26,7 +29,8 @@ body{
 
 .btn{
     display: inline-block;
-    padding: 10px 75px;
+    margin-right: 15px;
+    padding: 10px 95px;
     font-size: 24px;
     outline: none;
     background-color: #999999;
@@ -45,3 +49,31 @@ body{
     transform: translateY(4px);
 }
 
+.nav{
+    background-color: #171A21;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav-btn{
+    height: 25px;
+    width: auto;
+    margin: 18px 10px 20px 0px;
+    padding: 0px 10px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 3px;
+    border: #007B00 1px solid;
+    color: #fff;
+}
+
+.install{
+    background-color: #007B00;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
