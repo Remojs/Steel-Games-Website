@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
 body{
-    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LandingBGN.png?raw=true');
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LandingBG.png?raw=true');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.btn-box{
+.landing{
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.btn-link{
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    text-align: center;	
+    color: #000;
 }
 
 .btn{
-    width: 200px;
-    height: 100px;
-    color: azure;
-    background-color: rgb(29, 38, 68);
+    display: inline-block;
+    padding: 10px 75px;
+    font-size: 24px;
+    outline: none;
+    background-color: #999999;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #747474;
 }
+
+.btn:hover {
+    background-color: #a7a7a7
+}
+
+.btn:active {
+    background-color: #a7a7a7;
+    box-shadow: 0 5px #747474;
+    transform: translateY(4px);
+}
+

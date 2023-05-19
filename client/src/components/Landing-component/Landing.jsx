@@ -4,8 +4,10 @@ import './landing.css'
 
 const Landing = () => {
   return (
-    <div className='btn-box'>
-      <button className='btn'> <NavLink to='/home'> GO HOME </NavLink> </button>
+    <div className='component-box'>
+      <div className='landing'>
+        <button className='btn'> <NavLink to='/home' className='btn-link'> Go to Steel </NavLink> </button>
+      </div>
     </div>
   )
 }
