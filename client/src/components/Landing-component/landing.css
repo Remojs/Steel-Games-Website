@@ -49,12 +49,18 @@ body{
     transform: translateY(4px);
 }
 
+.btn-box{
+    display: flex;
+    flex-direction: row;
+}
+
 .nav{
     background-color: #171A21;
     height: 60px;
     width: 100vw;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav-btn{
@@ -76,4 +82,23 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 5px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.logo-box{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-title{
+    color: #999999;
+    font-size: 40px;
+    font-weight: 600;
 }

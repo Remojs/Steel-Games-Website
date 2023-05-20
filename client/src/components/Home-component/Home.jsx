@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { filterGenre, filterOrigin, orderByAlphabet, orderByRating, getAllGames, getAllGenres } from "../../redux/actions";
 import './home.css'
 
+import Gallery from "./Gallery/Gallery";
+
 const Home = () => {
     const [searchValue, SetSearchValue] = useState('')
     const [currentPage, setCurrentPage] = useState(1);
@@ -56,6 +58,9 @@ const Home = () => {
 
 return (
     <div>
+
+        <Gallery videogames={videogames}/>
+
         <div className="searchbar-div">
             <input className="searchbar-input" type='search' value={searchValue} onChange={handleSearch}/>
             <button>Agregar</button>
