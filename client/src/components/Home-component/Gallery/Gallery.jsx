@@ -34,26 +34,26 @@ return (
                             <div className="carrousel-info"> 
                                 <h2 className="carrousel-data">{element.name}</h2>
                                 <h2 className="carrousel-data">{element.genres}</h2>
-                                <h2 className="carrousel-data">
+                                <div className="carrousel-data">
                                         {hasPlatform(element.platform, 'PC') && (
-                                            <img src="" alt="PC" className="platform-icon" />
+                                            <img src="https://raw.githubusercontent.com/Remojs/PI-Videogames/3d6cd47276575d86882e5422b356e1ff7eb0c0d4/client/public/img/SVG/windows-174-svgrepo-com.svg" alt="" className="platform-icon" />
                                         )}
                                         {hasPlatform(element.platform, 'Playstation') && (
-                                            <img src="" alt="PlayStation" className="platform-icon" />
+                                            <img src="https://raw.githubusercontent.com/Remojs/PI-Videogames/3d6cd47276575d86882e5422b356e1ff7eb0c0d4/client/public/img/SVG/playstation-svgrepo-com.svg" alt="" className="platform-icon" />
                                         )}
                                         {hasPlatform(element.platform, 'Xbox') && (
-                                            <img src="" alt="Xbox" className="platform-icon" />
+                                            <img src="https://raw.githubusercontent.com/Remojs/PI-Videogames/3d6cd47276575d86882e5422b356e1ff7eb0c0d4/client/public/img/SVG/xbox-svgrepo-com.svg" alt="" className="platform-icon" />
                                         )}
                                         {hasPlatform(element.platform, 'Nintendo Switch') && (
-                                            <img src="" alt="Switch" className="platform-icon" />
+                                            <img src="https://raw.githubusercontent.com/Remojs/PI-Videogames/3d6cd47276575d86882e5422b356e1ff7eb0c0d4/client/public/img/SVG/nintendo-switch-svgrepo-com.svg" alt="" className="platform-icon" />
                                         )}
                                         {hasPlatform(element.platform, 'Linux') && (
-                                            <img src="" alt="Switch" className="platform-icon" />
+                                            <img src="https://raw.githubusercontent.com/Remojs/PI-Videogames/3d6cd47276575d86882e5422b356e1ff7eb0c0d4/client/public/img/SVG/linux-svgrepo-com.svg" alt="" className="platform-icon" />
                                         )}
                                         {hasPlatform(element.platform, 'macOS') && (
-                                            <img src="" alt="Switch" className="platform-icon" />
+                                            <img src="https://raw.githubusercontent.com/Remojs/PI-Videogames/3d6cd47276575d86882e5422b356e1ff7eb0c0d4/client/public/img/SVG/apple-173-svgrepo-com.svg" alt="" className="platform-icon" />
                                         )}
-                                    </h2>
+                                    </div>
                             </div>
                         </div>
                     )}

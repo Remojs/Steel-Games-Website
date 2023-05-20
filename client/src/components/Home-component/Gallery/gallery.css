@@ -72,3 +72,9 @@
   .carrousel-data{
     color: #B1B1B1;
   }
+
+  .platform-icon{
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+  }
