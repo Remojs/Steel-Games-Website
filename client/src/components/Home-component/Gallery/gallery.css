@@ -15,7 +15,7 @@
 
 .right-arrow {
     position: absolute;
-    right: 455px;
+    right: 420px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -26,7 +26,7 @@
   
   .left-arrow {
     position: absolute;
-    left: 455px;
+    left: 420px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -37,9 +37,9 @@
   
   .button-carrousel{
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border: none;
-    height: 378px;
+    height: 150px;
     width: 30px;
   }
 
@@ -67,14 +67,66 @@
     background-color: #171A21;
     box-shadow: 0px 0px 10px #000000e3;
     box-shadow: inset 10px 0px 10px #000000e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .carrousel-data{
     color: #B1B1B1;
   }
 
+  .bottom-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 0 15px;
+  }
+
   .platform-icon{
+    height: 15px;
+    width: 15px;
+    margin: 1px;
+  }
+
+  .platforms{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .title{
+    font-weight: 400;
+    margin-left: 15px;
+  }
+
+  .steam-status{
+    font-weight: 500;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .steam-sell{
+    text-align: center;
+    font-size: 10px;
+    margin-left: 18px;
+    padding: 2px;
+    background-color: #394149;
+    width:70px
+  }
+
+  .genres-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 10px;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .genre {
+    text-align: center;
     background-color: #ffffff;
-    height: 30px;
-    width: 30px;
+    padding: 15px 25px;
+    border-radius: 4px;
   }
