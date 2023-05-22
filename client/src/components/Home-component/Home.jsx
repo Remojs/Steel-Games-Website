@@ -58,9 +58,9 @@ const Home = () => {
 
 return (
     <div>
+        <img  className="home-gif" alt="gif" src='https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/GIF.gif?raw=true' />
 
         <Gallery videogames={videogames}/>
-
         <div className="searchbar-div">
             <input className="searchbar-input" type='search' value={searchValue} onChange={handleSearch}/>
             <button>Agregar</button>

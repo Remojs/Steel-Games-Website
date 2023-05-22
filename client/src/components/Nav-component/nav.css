@@ -1,0 +1,32 @@
+.nav-home{
+    height: 100px;
+    width: auto;
+    background-color: #171A21;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box{
+    margin-left: 400px;
+}
+
+.btn-box{
+    margin-right: 400px;
+    margin-bottom: 50px;
+}
+
+.links-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}

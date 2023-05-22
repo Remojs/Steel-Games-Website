@@ -3,6 +3,7 @@ import Landing from './components/Landing-component/Landing';
 import Home from './components/Home-component/Home';
 import Detail from './components/Detail-component/Detail';
 import Form from './components/Form-component/Form';
+import Nav from './components/Nav-component/Nav';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/home" element={<Home />}/>
           <Route path='/detail/:id' element={<Detail />} />
           <Route path='/createGame' element={<Form />} />
+          <Route path='nav' element={<Nav />} />
         </Routes>
     </div>
   );
