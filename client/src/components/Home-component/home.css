@@ -4,7 +4,8 @@ body{
 
 .home-body{
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .box-game{
@@ -17,3 +18,19 @@ body{
     width: 300px;
 }
 
+.winter-poster{
+    width: 977px;
+    height: 150px;
+    margin-left: 450px;
+    margin-top: -150px;
+}
+
+.divider-bar{
+    background-color: #16c24a02;
+    height: 10px;
+    width: 1100px;
+    margin-top: -170px;
+    margin-bottom: 185px;
+    margin-left: 380px;
+    box-shadow: 0 -50px 50px #16c249
+}

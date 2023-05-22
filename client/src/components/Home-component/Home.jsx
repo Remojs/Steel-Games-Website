@@ -64,6 +64,8 @@ return (
         <img  className="home-gif" alt="gif" src='https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/GIF.gif?raw=true' />
         <SearchNav searchValue={searchValue} handleSearch={handleSearch} />
         <Gallery videogames={videogames}/>
+        <div className="divider-bar"></div>
+        <img alt="winter" className="winter-poster" src="https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/winter.png?raw=true"/>
         
 
             <div className="filter-div">
@@ -94,13 +96,13 @@ return (
             </div>
 
     <div className="box-game">
-        {console.log(gameSearch)}
         {currentGames.map(game => (
-        <div key={game.id}>
-            <NavLink to={`/detail/${game.id}`}><h1>{game.name}</h1></NavLink>
-            <ul>{game.genres?.map(gen => <li key={gen}>{gen}</li>)}</ul>
-            <img src={game.image} alt="" className="img"/>
-        </div>
+            <div key={game.id}>
+                <img src={game.image} alt="" className="img"/>
+                <NavLink to={`/detail/${game.id}`}><h1>{game.name}</h1></NavLink>
+                <ul>{game.genres?.map(gen => <li key={gen}>{gen}</li>)}</ul>
+                
+            </div>
         ))}
     </div>
 
