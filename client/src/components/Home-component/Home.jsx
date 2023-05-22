@@ -97,11 +97,12 @@ return (
 
     <div className="box-game">
         {currentGames.map(game => (
-            <div key={game.id}>
-                <img src={game.image} alt="" className="img"/>
-                <NavLink to={`/detail/${game.id}`}><h1>{game.name}</h1></NavLink>
-                <ul>{game.genres?.map(gen => <li key={gen}>{gen}</li>)}</ul>
-                
+            <div key={game.id} className="card-box">
+                <img src={game.image} alt="" className="card-img"/>
+                <div className="card-info-box"> 
+                    <NavLink to={`/detail/${game.id}`} className='card-name'><h1>{game.name}</h1></NavLink>
+                    <ul className="card-genres-box">{game.genres?.map(gen => <li className="card-genres" key={gen}>{gen}</li>)}</ul>
+                </div>
             </div>
         ))}
     </div>
