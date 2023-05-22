@@ -6,9 +6,9 @@ const Nav = () => {
   return (
     <>
         <nav className="nav-home">
-            <div className='logo-box'>
-                <h1 className="nav-title"> STEEL </h1>
-                <img src="https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LogoSteel.png?raw=true" alt="SteelGaming" className='logo' />
+            <div className='icon-box'>
+                <h1 className="steel-title"> STEEL </h1>
+                <img src="https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LogoSteel5.png?raw=true" alt="SteelGaming" className='icon' />
             </div>
 
             <div className="links-nav">

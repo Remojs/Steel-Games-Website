@@ -8,9 +8,6 @@
     justify-content: space-between;
 }
 
-.logo-box{
-    margin-left: 400px;
-}
 
 .btn-box{
     margin-right: 400px;
@@ -29,4 +26,25 @@
     margin: 5px;
     font-size: 15px;
     font-weight: 400;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+}
+
+.steel-title{
+    color: #C5C3C0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
