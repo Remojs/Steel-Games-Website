@@ -1,4 +1,13 @@
+.carrousel-title{
+  color: #C5C3C0;
+  font-size: 16px;
+  margin-left: 470px;
+  margin-bottom: -5px;
+  font-weight: 500;
+}
+
 .carousel{
+    margin-top: -290px;
     position: relative;
     height: 100vh;
     display: flex;

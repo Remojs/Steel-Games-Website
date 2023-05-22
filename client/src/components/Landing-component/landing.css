@@ -2,8 +2,7 @@
 ::-webkit-scrollbar {display: none;}
 
 
-
-body{
+.component-box{
     background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LandingBGN.png?raw=true');
     background-repeat: no-repeat;
     background-size: cover;

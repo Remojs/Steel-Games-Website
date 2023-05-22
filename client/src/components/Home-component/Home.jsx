@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import { filterGenre, filterOrigin, orderByAlphabet, orderByRating, getAllGames, getAllGenres } from "../../redux/actions";
+import Nav from '../Nav-component/Nav';
+import SearchNav from './SearchNav/SearchNav';
 import './home.css'
 
 import Gallery from "./Gallery/Gallery";
@@ -13,7 +15,7 @@ const Home = () => {
 
     const videogames = useSelector(state => state.videogames)
     const genreList = useSelector(state => state.genres)
-    const dispatch = useDispatch();;
+    const dispatch = useDispatch();
 
     const handleGenreFilter = (event) => {
         dispatch(filterGenre(event.target.value))
@@ -57,14 +59,12 @@ const Home = () => {
     };
 
 return (
-    <div>
+    <div className="home-body">
+        <Nav />
         <img  className="home-gif" alt="gif" src='https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/GIF.gif?raw=true' />
-
+        <SearchNav searchValue={searchValue} handleSearch={handleSearch} />
         <Gallery videogames={videogames}/>
-        <div className="searchbar-div">
-            <input className="searchbar-input" type='search' value={searchValue} onChange={handleSearch}/>
-            <button>Agregar</button>
-        </div>
+        
 
             <div className="filter-div">
                 <select className="select-filter"  onChange={handleOrderByAlphabet}>

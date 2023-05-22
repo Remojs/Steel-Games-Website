@@ -8,12 +8,13 @@ const Nav = () => {
         <nav className="nav-home">
             <div className='icon-box'>
                 <h1 className="steel-title"> STEEL </h1>
-                <img src="https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LogoSteel5.png?raw=true" alt="SteelGaming" className='icon' />
+                <img src="https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/LogoSteelNav.png?raw=true" alt="SteelGaming" className='icon' />
             </div>
 
             <div className="links-nav">
-                <h4 className="link"><NavLink to='' className="link"> ABOUT </NavLink></h4>
-                <h4 className="link"><NavLink to='' className="link"> CREATE GAME </NavLink></h4>
+                <h4 className="link"><NavLink to='/' className="link"> HOME </NavLink></h4>
+                <h4 className="link"><NavLink to='/' className="link"> ABOUT </NavLink></h4>
+                <h4 className="link"><NavLink to='/createGame' className="link"> CREATE GAME </NavLink></h4>
             </div>
         
             <div className='btn-box'>

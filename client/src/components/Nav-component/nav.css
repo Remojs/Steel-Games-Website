@@ -10,8 +10,8 @@
 
 
 .btn-box{
-    margin-right: 400px;
-    margin-bottom: 50px;
+    margin-right: 470px;
+    margin-bottom: 60px;
 }
 
 .links-nav{
@@ -21,7 +21,7 @@
 }
 
 .link{
-    color: #fff;
+    color: #C5C3C0;
     text-decoration: none;
     margin: 5px;
     font-size: 15px;
@@ -29,8 +29,8 @@
 }
 
 .icon{
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
     margin: 5px;
 }
 
@@ -39,12 +39,13 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    margin-left: 400px;
+    margin-left: 470px;
 }
 
 .steel-title{
     color: #C5C3C0;
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 600;
     letter-spacing: 3px;
+    margin-left: 5px;
 }
