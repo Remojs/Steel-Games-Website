@@ -1,6 +1,7 @@
 const initialState = {
     videogames: [],
     allVideogames: [],
+    galleryGames: [],
     genres:[]
 }
 
@@ -8,7 +9,7 @@ const reducer = (state = initialState, action) => {
     switch(action.type){
 
         case 'SET_VIDEOGAMES':
-          return {...state, videogames: action.payload, allVideogames: action.payload};
+          return {...state, videogames: action.payload, allVideogames: action.payload, galleryGames: action.payload};
 
 
         case 'SET_GENRES':

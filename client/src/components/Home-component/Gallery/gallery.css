@@ -7,13 +7,12 @@
 }
 
 .carousel{
-    margin-top: -290px;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -290px;
+  margin-bottom: -100px;
 }
 
 .image-carrousel{

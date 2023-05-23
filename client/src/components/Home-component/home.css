@@ -13,6 +13,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 5px;
+    margin-top: 20px;
     margin-left: 435px;
     margin-right: 435px;
 }
@@ -49,29 +50,204 @@ body{
 }
 
 .card-info-box{
-    height: 110px;
+    height: 120px;
     width: 300px;
-    background: ;
-    margin-top: -17px;
+    background: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Card-bg.png?raw=true');
+    margin-top: -15px;
 }
 
 .card-genres-box{
-    color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-left: -20px;
+}
+
+.card-genres{
+    font-size: 12px;
+    list-style: none;
+    margin-right: 5px;
+    color: #000000;
 }
 
 .card-name{
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.card-name-link{
     color: #fff;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
 
-.card-name:hover{
+.card-name-link:hover{
     font-size: 11px;
     color: #0d2715;
     transition-duration: 0.3s;
+}
+
+.cards-title{
+    color: #C5C3C0;
+    font-size: 16px;
+    margin-left: 450px;
+    margin-bottom: -30px;
+    font-weight: 500;
+}
+
+.prize-box{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0 0px 20px;
+}
+
+.discount{
+    background-color: #1D6F94;
+    width: 70px;
+    height: 35px;
+    color: #5eb6df;
+    font-size: 25px;
+    text-align: center;
+}
+
+.prize{
+    width: 100px;
+    height: 35px;
+    background-color: #171A21;
+}
+
+.old-prize{
+    font-size: 11px;
+    color: #424242;
+    margin: 2px 0px -20px 40px ;
+    text-decoration: line-through;
+}
+
+.new-prize{
+    margin-top: 16px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #5eb6df;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.prev-btn{
+    width: 70px;
+    height: 30px;
+    background-color:#171A21;
+    color: #fff;
+    border: none;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.current-btn{
+    width: 20px;
+    height: 30px;
+    background-color: #14171d;
+    color: #5eb6df;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-btn{
+    width: 70px;
+    height: 30px;
+    background-color:#171A21;
+    color: #fff;
+    border: none;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filter-div {
+    top: 15px;
+    width: 900px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 25px 10px 490px;
+    background: linear-gradient(45deg, #0d7c38d8, #145e30d8, #145e30d8);
+}
+
+.select-filter {
+    margin: 5px 30px 5px 30px ;
+    width: 200px;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #0c4221;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.select-filter:focus {
+    outline: none;
+}
+
+.select-filter option {
+    background-color: #134d29;
+}
+
+.select-filter:hover {
+    background-color: #134d29;
+}
+
+.select-filter:disabled {
+    background-color: #ccc;
+    color: #555;
+}
+
+.select-filter.open {
+    height: auto;
+}
+
+.footer-home{
+    margin-top: 30px;
+    height: 120px;
+    width: auto;
+    background-color: #171A21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text{
+    color: #969EAB;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 430px;
+    margin-right: 430px;
+    padding: 0px;
+}
+
+.footer-text a{
+    color: #969EAB;
+    font-weight: 500;
+}
+
+.footer-divider{
+    margin: 15px 0 15px 0;
+    background-color: #969EAB;
+    height: 1px;
+    width: 1020px;
+    padding: 0px;
+}
+
+.up{
+    margin-top: 15px;
 }

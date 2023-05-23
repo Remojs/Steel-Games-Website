@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllGenres, getAllGames, PostVideogames } from "../../redux/actions";
 import validate from './validation'
+import './form.css'
 
 
 const AddVideogame = () => {
