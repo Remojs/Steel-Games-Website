@@ -14,7 +14,15 @@ const getApiGames = async (url) => {
         return allGames;
 };
 
-const getDbGames = async (db) => await db.findAll()
+const getDbGames = async (db) => await db.findAll({
+    include: { 
+        model: Genres, 
+        attributes: ['name'], 
+        through: { 
+            attributes: [], 
+        },
+    },
+})
 
 const getAll = async () => {
     const db = await getDbGames(Videogames);

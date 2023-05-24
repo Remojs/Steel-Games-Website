@@ -8,9 +8,8 @@
     justify-content: space-between;
 }
 
-
 .btn-box{
-    margin-right: 470px;
+    margin-right: 440px;
     margin-bottom: 60px;
 }
 
@@ -32,6 +31,7 @@
     height: 38px;
     width: 38px;
     margin: 5px;
+    margin-left: -15px;
 }
 
 .icon-box{

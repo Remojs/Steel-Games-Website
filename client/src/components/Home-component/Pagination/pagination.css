@@ -1,0 +1,36 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.prev-btn{
+    width: 70px;
+    height: 30px;
+    background-color:#171A21;
+    color: #fff;
+    border: none;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.current-btn{
+    width: 20px;
+    height: 30px;
+    background-color: #14171d;
+    color: #5eb6df;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-btn{
+    width: 70px;
+    height: 30px;
+    background-color:#171A21;
+    color: #fff;
+    border: none;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    margin-top: 20px;
+}

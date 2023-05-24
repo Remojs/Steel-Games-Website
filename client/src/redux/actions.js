@@ -52,7 +52,6 @@ export function PostVideogames(payload){
     return async function(dispatch){
         try{
             const data = await axios.post("http://localhost:3001/videogames/", payload)
-            alert('Formulario enviado')
             return data;
         } catch(error){
             alert('Server caido')

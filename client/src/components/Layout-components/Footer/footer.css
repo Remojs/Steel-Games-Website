@@ -1,0 +1,36 @@
+
+.footer-home{
+    margin-top: 30px;
+    height: 120px;
+    width: auto;
+    background-color: #171A21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text{
+    color: #969EAB;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 430px;
+    margin-right: 430px;
+    padding: 0px;
+}
+
+.footer-text a{
+    color: #969EAB;
+    font-weight: 500;
+}
+
+.footer-divider{
+    margin: 15px 0 15px 0;
+    background-color: #969EAB;
+    height: 1px;
+    width: 1020px;
+    padding: 0px;
+}
+
+.up{
+    margin-top: 15px;
+}

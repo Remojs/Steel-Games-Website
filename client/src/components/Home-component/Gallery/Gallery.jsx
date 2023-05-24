@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import './gallery.css'
 
 const Gallery = ({videogames}) => {
 
     const [current, setCurrent] = useState(0)
-    const length = videogames.length
-    const games = videogames.reverse()
+    const games = [...videogames].slice(35, 81).reverse();
+    const length = games.length
 
-    const nextSlide = () => setCurrent(current === length - 1 ? 0 : current + 1);
+    const nextSlide = useCallback(() => setCurrent(current => current === length - 1 ? 0 : current + 1), [length]);
     const prevSlide = () => setCurrent(current === 0 ? length - 1 : current - 1)
 
     useEffect(() => { 
         const interval = setInterval(() => nextSlide(), 5000);
         return () => clearInterval(interval);
-    }, [current]);
+    }, [current, nextSlide]);
 
     const hasPlatform = (platforms, platform) => {
         const regex = new RegExp(`\\b${platform}\\b`, 'i');

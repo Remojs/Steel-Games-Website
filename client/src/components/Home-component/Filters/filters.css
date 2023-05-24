@@ -1,0 +1,45 @@
+.filter-div {
+    top: 15px;
+    width: 900px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 25px 10px 490px;
+    background: linear-gradient(45deg, #0d7c38d8, #145e30d8, #145e30d8);
+}
+
+.select-filter {
+    margin: 5px 30px 5px 30px ;
+    width: 200px;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #0c4221;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.select-filter:focus {
+    outline: none;
+}
+
+.select-filter option {
+    background-color: #134d29;
+}
+
+.select-filter:hover {
+    background-color: #134d29;
+}
+
+.select-filter:disabled {
+    background-color: #ccc;
+    color: #555;
+}
+
+.select-filter.open {
+    height: auto;
+}

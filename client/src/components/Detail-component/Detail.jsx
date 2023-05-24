@@ -16,31 +16,37 @@ const getGameInfo = async(id) => {
 
 useEffect(() => {
     getGameInfo(id)
-    }, []);
+    }, [id]);
 
 return (
-    <div className="game-details">
-        <h1>ID: {game.id}</h1>
-        <h2>Nombre: {game.name}</h2>
+    <div className="game-background">
+        <div className="game-details">
+            <h1>ID: {game.id}</h1>
+
+            <h2>Nombre: {game.name}</h2>
+
             <img src={game.image} alt="Game Cover" />
 
-        <div className="platforms">
-            <h3>Plataformas:</h3>
-            <ul>{game.platform?.map((platform, index) => <li key={index}>{platform}</li>)}</ul>
-        </div>
+            <div className="platforms">
+                <h3>Plataformas:</h3>
+                <ul>{game.platform?.map((platform, index) => <li key={index}>{platform}</li>)}</ul>
+            </div>
 
-        <div className="description">
-            <h3>Descripción:</h3>
-            <p>{game.description}</p>
-        </div>
+            <div className="description">
+                <h3>Descripción:</h3>
+                <p>{game.description}</p>
+            </div>
 
             <p>Fecha de lanzamiento: {game.released}</p>
+
             <p>Rating: {game.rating}</p>
-        <div className="genres">
-            <h3>Géneros:</h3>
-            <ul>{game.genres?.map((genre, index) => <li key={index}>{genre}</li>)}</ul>
+
+            <div className="genres">
+                <h3>Géneros:</h3>
+                <ul>{game.genres?.map((genre, index) => <li key={index}>{genre}</li>)}</ul>
+            </div>
         </div>
-        </div>
+    </div>
     );
 }
 

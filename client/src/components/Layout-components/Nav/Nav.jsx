@@ -12,8 +12,8 @@ const Nav = () => {
             </div>
 
             <div className="links-nav">
-                <h4 className="link"><NavLink to='/' className="link"> HOME </NavLink></h4>
-                <h4 className="link"><NavLink to='/' className="link"> ABOUT </NavLink></h4>
+                <h4 className="link"><NavLink to='/home' className="link"> HOME </NavLink></h4>
+                <h4 className="link"><NavLink to='/about' className="link"> ABOUT </NavLink></h4>
                 <h4 className="link"><NavLink to='/createGame' className="link"> CREATE GAME </NavLink></h4>
             </div>
         

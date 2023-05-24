@@ -17,7 +17,6 @@ const createGame = async (name, description, released, rating, platform, genres,
         });
 
         await newVideogame.addGenres(generosEncontrados);
-        console.log(newVideogame)
         return newVideogame
 
     } catch (error) {

@@ -1,0 +1,49 @@
+.nav{
+    background-color: #171A21;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-btn{
+    height: 25px;
+    width: auto;
+    margin: 18px 10px 20px 0px;
+    padding: 0px 10px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 3px;
+    border: #007B00 1px solid;
+    color: #fff;
+}
+
+.install{
+    background-color: #007B00;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo{
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+}
+
+.logo-box{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+}
+
+.nav-title{
+    color: #999999;
+    font-size: 40px;
+    font-weight: 600;
+}

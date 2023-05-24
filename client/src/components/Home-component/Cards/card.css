@@ -1,0 +1,109 @@
+
+.box-game{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 5px;
+    margin-top: 20px;
+    margin-left: 435px;
+    margin-right: 435px;
+}
+
+.card-img{
+    height: 280px;
+    width: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-box{
+    height: 390px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0px 0px 10px #000000e3;
+}
+
+.card-info-box{
+    height: 120px;
+    width: 300px;
+    background: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Card-bg.png?raw=true');
+    margin-top: -15px;
+}
+
+.card-genres-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: -20px;
+}
+
+.card-genres{
+    font-size: 12px;
+    list-style: none;
+    margin-right: 5px;
+    color: #000000;
+}
+
+.card-name{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.card-name-link{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-name-link:hover{
+    font-size: 11px;
+    color: #0d2715;
+    transition-duration: 0.3s;
+}
+
+.cards-title{
+    color: #C5C3C0;
+    font-size: 16px;
+    margin-left: 450px;
+    margin-bottom: -30px;
+    font-weight: 500;
+}
+
+.prize-box{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0 0px 20px;
+}
+
+.discount{
+    background-color: #1D6F94;
+    width: 70px;
+    height: 35px;
+    color: #5eb6df;
+    font-size: 25px;
+    text-align: center;
+}
+
+.prize{
+    width: 100px;
+    height: 35px;
+    background-color: #171A21;
+}
+
+.old-prize{
+    font-size: 11px;
+    color: #424242;
+    margin: 2px 0px -20px 40px ;
+    text-decoration: line-through;
+}
+
+.new-prize{
+    margin-top: 16px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #5eb6df;
+}
