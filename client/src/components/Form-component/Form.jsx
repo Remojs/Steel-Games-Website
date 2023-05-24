@@ -69,7 +69,9 @@ const AddVideogame = () => {
     }
     
     return(
-        <form onSubmit={submitHandler}>
+    <div className="form-box">
+        <div className="form-container">
+            <form onSubmit={submitHandler}>
             <h2>Crea Tu Propio Videojuego!</h2>
 
             <div>
@@ -130,7 +132,9 @@ const AddVideogame = () => {
                 form.image === '' || errors.image ||
                 form.genres === '' || errors.genres ||
                 form.platforms === '' || errors.platforms}> Crear Videojuego </button>
-        </form>
+            </form>
+        </div>
+    </div>
     )
 }
 
