@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom'
 import Nav from '../Layout-components/Nav/Nav'
+import Footer from '../Layout-components/Footer/Footer'
 import './detail.css'
 import DetailExtra from './DetailExtra';
 
@@ -56,6 +57,7 @@ return (
             </div>
         </div>
         <DetailExtra game={game}/>
+        <Footer />
     </div>
     );
 }

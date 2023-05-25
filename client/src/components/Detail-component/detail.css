@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 260vh;
     color: #fff;
 }
 
@@ -156,40 +156,91 @@
 /*DETAIL ESTRA*/
 
 .detail-extra-info{
-    height: 260px;
+    height: 150px;
     width: 305px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B0D27;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.caracteristica{
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    background-color: #2f1446;
+    height: 20px;
+    padding: 3px;
+    margin: 2px 5px;
+}
+
+.caracteristica svg {
+    background-color: #150a1e;
+    padding: 5px;
+    margin-left: -5px;
+    margin-right: 10px;
 }
 
 .detail-extra-idiom{
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Detail-img/idiom.png?raw=true');
     height: 200px;
     width: 305px;
+    margin-bottom: 10px;
 }
 
 .detail-extra-esrb{
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Detail-img/esrb.png?raw=true');
     height: 155px;
     width: 305px;
+    margin-bottom: -5px;
 }
 
 .detail-extra-badges{
     height: 125px;
     width: 305px;
+    background-color: #1B0D27;
 }
 
-.detail-extra-infoTwo{
-    height: 335px;
-    width: 305px;
+.badges-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
 }
+
+.badge-title{
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.badge{
+    height: 65px;
+    width: 65px;
+    background-color: #2d1343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 
 .detail-extra-metacritic{
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Detail-img/metacritic.png?raw=true');
     height: 80px;
     width: 305px;
+    margin-top: 20px;
 }
 
 .detail-extra-franchise{
+    background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Detail-img/bg.png?raw=true');
     height: 55px;
     width: 615px;
     border-radius: 5px;
-    background-color: aqua;
     display: flex;
     align-items: center;
 }
@@ -202,7 +253,7 @@
     height: 75px;
     width: 615px;
     margin-top: 40px;
-    background-color: aqua;
+    background-color:#2d1343;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -242,8 +293,8 @@
 .detail-extra-buypack{
     height: 120px;
     width: 615px;
-    background-color: #005eff;
-    margin-top: 40px;
+    background-color: #2D1343;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +302,7 @@
 }
 
 .buypack-description-span{
-    color: #00e946;
+    color: #fff;
     font-size: 12px;
 }
 
@@ -268,6 +319,11 @@
     margin-left: 150px;
     border-radius: 2px;
     gap: 6px;
+}
+
+.pack-data{
+    background-color: #9e3cee;
+    color: #fff;
 }
 
 .buypack-btn-prize-box{
@@ -299,15 +355,20 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+    background-color: #2D1343;
+    padding: 5px 0;
 }
 
 .dlc-container{
     height: 20px;
+    width: 600px;
+    margin-top: 1.5px;
+    margin-left: 7px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #005eff54;
+    background-color:#691ea7
 }
 
 .dlc-name{
@@ -327,6 +388,7 @@
     gap: 2px;
     margin-left: 335px;
     width: 250px;
+    margin-top: 5px;
 }
 
 .detail-extra-events{
@@ -354,7 +416,7 @@
     padding: 12px;
     display: flex;
     flex-direction: column;
-    background-color: #005eff;
+    background-color:#150a1e;
     margin-top: -5px;
     border-radius: 0 0 5px 5px;
 }
@@ -373,6 +435,7 @@
 .detail-extra-about{
     height: auto;
     width: 615px;
+    padding: 15px
 }
 
 .detail-extra-requeriments{
@@ -381,9 +444,9 @@
     display: flex;
     flex-direction: row;
     font-size:12px;
-    margin-left: 15px;
-    margin-right: -15px;
     gap: 15px;
+    padding: 15px;
+    margin-bottom: 50px;
 }
 
 .requeriments-span{
@@ -394,23 +457,31 @@
     width: 290px;
 }
 
-.detail-extra-columnOne{
-    border: 3px red solid;
-}
-
-.detail-extra-columnTwo{
-    border: 3px blue solid;
-}
-
 .detail-extra-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: -15px;
-    gap: 35px;
+    gap: 15px;
+    margin-top: 30px;
 }
 
 .detail-extra-title{
     font-size: 15px;
-    font-weight: 400px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.buypack-page-title{
+    margin-top: 35px;
+}
+
+.contenido-page-title{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.events-page-title{
+    margin-top: 55px;
+    margin-bottom: 10px;
 }
