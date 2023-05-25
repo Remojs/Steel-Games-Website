@@ -10,7 +10,7 @@ Es importante destacar que se utilizo recursos básicos de estilos y diseño, si
 
 Para el desarrollo del proyecto se tomaron diseños inspirados en la página de Steam (https://store.steampowered.com). Todas las imágenes fueron creadas utilizando Adobe Photoshop y creadores de imágenes con IA.
 
-El proyecto tiene una duración total estimada de 112 horas en total.
+El proyecto tiene una duración total estimada de 102 horas en total.
 
 ## Contacto
 Puedes contactarme en LinkedIn: [Thiago Zambonini](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
