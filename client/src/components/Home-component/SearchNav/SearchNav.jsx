@@ -8,10 +8,10 @@ return (
         <div className="searchbar-div">
                 <div className='links-box'>
                     <button className="link-searchnav"> <NavLink  className="link-searchnav" to={`/detail/${Math.floor(Math.random() * 849500) + 1}`}> Random Game</NavLink> </button>
-                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='https://matias.ma/nsfw/' > Coming Soon</NavLink> </button>                
-                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='https://matias.ma/nsfw/' > Coming Soon</NavLink> </button>
-                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='https://matias.ma/nsfw/' > Coming Soon</NavLink> </button>
-                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='https://matias.ma/nsfw/' > Coming Soon</NavLink> </button>
+                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='/workinprogress'> Coming Soon</NavLink> </button>                
+                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='/workinprogress'> Coming Soon</NavLink> </button>
+                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='/workinprogress'> Coming Soon</NavLink> </button>
+                    <button className="link-searchnav"> <NavLink  className="link-searchnav" to='/workinprogress'> Coming Soon</NavLink> </button>
                 </div>
                 
                 <div className="searchbar-box">

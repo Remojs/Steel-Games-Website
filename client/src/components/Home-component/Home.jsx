@@ -8,6 +8,7 @@ import Gallery from "./Gallery/Gallery";
 import Filters from './Filters/Filters'
 import Cards from "./Cards/Cards";
 import Pagination from "./Pagination/Pagination";
+import Footer from '../Layout-components/Footer/Footer'
 import './home.css'
 
 
@@ -52,6 +53,7 @@ return (
         <h4 className="cards-title"> OFERTAS ESPECIALES </h4>
         <Cards currentGames={currentGames}/>
         <Pagination  goToPreviousPage={goToPreviousPage} goToNextPage={goToNextPage} currentPage={currentPage} totalPages={totalPages}/>
+        <Footer />
     </div>
 );
 };

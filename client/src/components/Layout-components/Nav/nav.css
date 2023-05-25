@@ -49,3 +49,18 @@
     letter-spacing: 3px;
     margin-left: 5px;
 }
+
+.nav-btn-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-btn-link:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-btn-link:hover{
+    text-decoration: none;
+    color: #fff;
+}

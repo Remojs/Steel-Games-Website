@@ -214,7 +214,7 @@
 
 .badge-title{
     font-size: 13px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .badge{
@@ -227,7 +227,13 @@
     text-align: center;
 }
 
+.badge-two{
+    filter: hue-rotate(120deg);
+}
 
+.badge-three{
+    filter: hue-rotate(180deg);
+}
 
 .detail-extra-metacritic{
     background-image: url('https://github.com/Remojs/PI-Videogames/blob/master/client/public/img/Detail-img/metacritic.png?raw=true');
