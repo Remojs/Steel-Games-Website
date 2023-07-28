@@ -1,3 +1,7 @@
+##
+## ESPAÑOL
+##
+
 # Videojuegos | Proyecto Individual - Readme
 
 Este proyecto consiste en la construcción de una Single Page Application utilizando tecnologías como React, Redux, Node, Express y Sequelize. El objetivo principal es crear una aplicación web donde se puedan buscar, visualizar, filtrar, ordenar y crear videojuegos.
@@ -17,6 +21,10 @@ Puedes contactarme en LinkedIn: [Thiago Zambonini](https://www.linkedin.com/in/t
 
 
 ## 
+##
+## ENGLISH
+##
+##
 
 # Video Games | Single Page Project - Readme
 
