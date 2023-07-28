@@ -19,11 +19,8 @@ El proyecto tiene una duración total estimada de 102 horas en total.
 ## Contacto
 Puedes contactarme en LinkedIn: [Thiago Zambonini](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
 
-
-## 
 ##
 ## ENGLISH
-##
 ##
 
 # Video Games | Single Page Project - Readme
